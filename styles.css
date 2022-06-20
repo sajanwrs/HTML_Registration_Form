@@ -1,0 +1,76 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1B1B32;
+    color: #F5F6F7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+h1, p{
+    margin: 1em auto;
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    min-width: 300px;
+    width: 60vw;
+    max-width: 500px;
+    padding: 2em;
+}
+
+fieldset{
+    border: none;
+    padding: 2rem 0;
+}
+
+/* To select all but the last fieldset use the following pseudo-class */
+fieldset:not(:last-of-type){
+    border-bottom: 3px solid #3b3b4f;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+/* To remove the earlier rule which set all the input elements to width: 100% */
+.inline{
+    width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input, textarea{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    
+}
+/* used an attribute selector, which selects an element based on the given attribute value */
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: #ffffff;
+    min-width: 300px;
+}
+
+input[type="file"]{
+    padding: 1px 2px;
+}
+
+a{
+    color: #dfdfe2;
+}
